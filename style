@@ -1,0 +1,51 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #181c24;
+  color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 600px;
+  margin: 32px auto;
+  background: #23293a;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 16px #0008;
+}
+.stats, .roll-buttons {
+  margin-bottom: 18px;
+}
+button {
+  background: #2980ef;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  margin: 4px 0;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+button:hover {
+  background: #1a61b8;
+}
+#roll-result {
+  margin: 18px 0;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+#history {
+  max-height: 200px;
+  overflow-y: auto;
+  background: #14161d;
+  border-radius: 6px;
+  padding: 12px;
+  list-style: none;
+}
+#history li {
+  margin-bottom: 6px;
+  padding: 4px 0;
+  border-bottom: 1px solid #23293a;
+  font-size: 0.98em;
+}
