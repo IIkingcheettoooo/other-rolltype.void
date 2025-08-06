@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Roll-Based RNG Game</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Roll-Based RNG Game</h1>
+    <div class="stats">
+      <p>Luck: <span id="luck">1</span> | Boost: <span id="boost">1</span></p>
+      <button onclick="buyLuck()">Upgrade Luck (+1)</button>
+      <button onclick="buyBoost()">Upgrade Boost (+1)</button>
+      <button onclick="saveGame()">Save Game</button>
+      <button onclick="loadGame()">Load Game</button>
+    </div>
+    <div class="roll-buttons">
+      <button onclick="roll('simple')">Simple Roll (1x)</button>
+      <button onclick="roll('super')">Super Roll (5x)</button>
+      <button onclick="roll('mega')">Mega Roll (10x)</button>
+    </div>
+    <div id="roll-result"></div>
+    <h2>Roll History</h2>
+    <ul id="history"></ul>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
